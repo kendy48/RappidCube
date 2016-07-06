@@ -38,6 +38,9 @@
                 dataType: 'text',
                 success: function (data) {
                     $('#outputCube').val(data);
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.log(textStatus, errorThrown);
                 }
             });
         }
